@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Probability Calculator</title>
+</head>
+<body>
+  <form id="probabilityForm">
+    <label for="m">1セット当たりの枚数(1にするとランダムグッズに対応可):</label>
+    <input type="number" id="m" name="m"><br><br>
+    
+    <label for="r">全部の種類数(とき宣の生誕なら20):</label>
+    <input type="number" id="r" name="r"><br><br>
+    
+    <input type="submit" value="Calculate Probability">
+  </form>
+
+  <table id="resultTable" border="1">
+    <thead>
+      <tr>
+        <th>n</th>
+        <th>Probability</th>
+      </tr>
+    </thead>
+    <tbody id="probabilityBody"></tbody>
+  </table>
+
+  <script src="probability.js"></script>
+</body>
+</html>
